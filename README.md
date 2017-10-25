@@ -1,5 +1,5 @@
 # Calculator
-This is a console based calculator which can perform following tasks
+This is a console based Java calculator which can perform following tasks
 
 ### 1. Arithmetic Calculation
 
