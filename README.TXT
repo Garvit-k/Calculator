@@ -1,0 +1,9 @@
+PROJECT TITLE:Calculator
+
+PURPOSE OF PROJECT:To Calculate
+
+VERSION :1.0
+
+HOW TO START THIS PROJECT:Run Calculator
+
+AUTHORS: Garvit Kothari

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+import java.math.*;
+class test {
+    public static void main(String []args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter");
+        String l=sc.nextLine();
+        String ls=JOptionPane.showInputDialog("Enter");
+        String display =l+" "+ls;
+        
+        JOptionPane.showMessageDialog(null,display);
+        System.exit(0
+    }
+    }
