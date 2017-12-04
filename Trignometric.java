@@ -25,54 +25,48 @@ class Trignometric
             System.out.println("Enter number");
             i=Integer.parseInt(b.readLine());
            ans =Math.sin(i) ;
-            System.out.println("ans is "+ans);
             break;
             case 2:
             System.out.println("Enter number");
             i=Integer.parseInt(b.readLine());
             ans =Math.cos(i) ;
-            System.out.println("ans is "+ans);
             break;
             case 3:
             System.out.println("Enter number");
             i=Integer.parseInt(b.readLine());
              ans =Math.tan(i) ;
-            System.out.println("ans is "+ans);
             break;
             case 5:
            System.out.println("Enter angle");
             i=Integer.parseInt(b.readLine());
             ans=Math.acos(i);
-            System.out.println("ans is "+ans);
             break;
             case 4:
            System.out.println("Enter angle");
             i=Integer.parseInt(b.readLine());
             ans=Math.asin(i);
-            System.out.println("ans is "+ans);
             break;
             case 6:
            System.out.println("Enter angle");
             i=Integer.parseInt(b.readLine());
             ans=Math.atan(i);
-            System.out.println("ans is "+ans);
             break;
             case 7:
            System.out.println("Enter angles");
             int x=Integer.parseInt(b.readLine());
             int y=Integer.parseInt(b.readLine());
             ans=Math.atan2(x,y);
-            System.out.println("ans is "+ans);
             break;
             case 8:
            System.out.println("Enter number");
             i=Integer.parseInt(b.readLine());
             ans=Math.log(i);
-            System.out.println("ans is "+ans);
             break;
             
             default:System.out.println("Wrong Choice");
             break;
         }
+        if(ch1<=8)
+            printf("\nAns is "+ans);
     }
 }
