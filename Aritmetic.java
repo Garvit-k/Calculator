@@ -63,6 +63,7 @@ class Aritmetic
             System.out.println("WRONG CHOICE");
             break;
         }
-        System.out.println("ANSWER IS  "+ans);
+        if(ch1<=4)
+            System.out.println("ANSWER IS  "+ans);
     }
 }
