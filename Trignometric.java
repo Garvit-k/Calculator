@@ -67,6 +67,6 @@ class Trignometric
             break;
         }
         if(ch1<=8)
-            printf("\nAns is "+ans);
+           System.out.println("\nAns is "+ans);
     }
 }
