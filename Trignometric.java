@@ -24,17 +24,17 @@ class Trignometric
             case 1:
             System.out.println("Enter number");
             i=Integer.parseInt(b.readLine());
-           ans =Math.sin(i) ;
+           ans=Math.sin(i);
             break;
             case 2:
             System.out.println("Enter number");
             i=Integer.parseInt(b.readLine());
-            ans =Math.cos(i) ;
+            ans=Math.cos(i);
             break;
             case 3:
             System.out.println("Enter number");
             i=Integer.parseInt(b.readLine());
-             ans =Math.tan(i) ;
+             ans=Math.tan(i);
             break;
             case 5:
            System.out.println("Enter angle");
