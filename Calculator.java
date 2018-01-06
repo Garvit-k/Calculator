@@ -11,7 +11,7 @@ class Calculator
        do
        {
         
-         System.out.println("choose any one Option\n1.Arithmetic Calculations\n2.Exponential Calculations\n3.Trignometric calculations");
+         System.out.println("Choose any one option\n1.Arithmetic Calculations\n2.Exponential Calculations\n3.Trignometric calculations");
          System.out.println("4.Logical calculations\n5.Others\n6.Exit");
          choice=Integer.parseInt(br.readLine());
          switch(choice)
