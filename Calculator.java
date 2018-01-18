@@ -1,21 +1,21 @@
-import java.io.*;
-import java.util.*;
-class Calculator
-{
-    public static void main(String args[])
-    {
-     try
-     {       
-       BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+import java.util.Scanner;
+
+class Calculator {
+    public static void main(String args[]) {
+    	Scanner in = new Scanner(System.in);
        int choice=0,tryer=0;
        do
        {
         
-         System.out.println("Choose any one option\n1.Arithmetic Calculations\n2.Exponential Calculations\n3.Trignometric calculations");
-         System.out.println("4.Logical calculations\n5.Others\n6.Exit");
-         choice=Integer.parseInt(br.readLine());
-         switch(choice)
-          {
+         System.out.println("Choose any one Option");
+         System.out.println("1.Arithmetic Calculations");
+         System.out.println("2.Exponential Calculations");
+         System.out.println("3.Trignometric calculations");
+         System.out.println("4.Logical calculations");
+         System.out.println("5.Others");
+         System.out.println("6.Exit");
+         choice=in.nextInt();
+         switch(choice) {
              case 1:
                    Aritmetic ar=new Aritmetic();
                    ar.arith();
@@ -42,16 +42,12 @@ class Calculator
              default:
                    System.out.println("Wrong Choice");
           }
-          System.out.println("\nDo You Want to try Again ?");
-          System.out.println("Enter 1 for YES\nFor NO enter 0\n");
-          tryer= Integer.parseInt(br.readLine());
+          System.out.println();
+          System.out.println("Do You Want to try Again");
+          System.out.println("Enter 1 for YES ");
+          System.out.println("For NO enter 0"); 
+          tryer= in.nextInt();
        }while(tryer==1);
        System.exit(0);
-     }
-        catch(Exception e)
-        {
-            System.out.println("There was some error");
-            System.out.println(e);
-        }
     }
 }
