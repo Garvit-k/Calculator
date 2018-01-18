@@ -1,12 +1,10 @@
-import java.lang.*;
-import java.io.*;
-class Logical
-{
-    public static void logi() throws IOException
-    {
-        BufferedReader b=new BufferedReader(new InputStreamReader(System.in));
-        int ch1,ch2;
-        System.out.println("choose any one operation");
+import java.util.Scanner;
+
+class Logical {
+    public static void logi() {
+        Scanner in = new Scanner(System.in);
+        int ch1;
+        System.out.println("Choose any one operation");
         System.out.println("1.Factorial");
         System.out.println("2.Factors");
         System.out.println("3.check for even or odd");
@@ -16,32 +14,28 @@ class Logical
         System.out.println("7.Fibonacci Series");
         System.out.println("8.check for armstrong number");
         System.out.println("9.check perfect number or not");
-        ch1=Integer.parseInt(b.readLine());
-     switch(ch1)
-     {
+        ch1=in.nextInt();
+        switch(ch1) {
             case 1:
             System.out.println("Enter number");
-            double i=Double.parseDouble(b.readLine());
-           double z=1;
-         for(double x=1;i<=i;x++)
-         { 
+            double i=in.nextDouble();
+            double z=1;
+            for(double x=1;x<=i;x++) { 
              z*=i;
             }
-          System.out.println("factorial value of "+i+" is "+z);
-        
+            System.out.println("factorial value of "+i+" is "+z);
             break;
             case 2:
             System.out.println("Enter number");
-            i=Double.parseDouble(b.readLine());
-            for(int x=1;x<=i;x++)
-          {
-           if(i%x==0)
-            System.out.println("Factors are "+x);
-          }
+            i=in.nextDouble();
+            for(int x=1;x<=i;x++) {
+            	if(i%x==0)
+            		System.out.println("Factors are "+x);
+            }
             break;
             case 3:
             System.out.println("Enter number");
-            i=Double.parseDouble(b.readLine());
+            i=in.nextDouble();
              if(i%2==0)
              System.out.println("its EVEN");
              else
@@ -49,18 +43,14 @@ class Logical
             break;
             case 4:
            System.out.println("Enter number");
-            double x=Double.parseDouble(b.readLine());
-            int flag=1;    
-       for(i=2;i<x;i++ )
-       {
-		 if(x%i==0)
-		 {
-		  flag = 0;
-		 }
-	   }  
-
-	    if(flag==0)
-	    {
+            double x=in.nextDouble();
+            int flag=1;
+            for(i=2;i<x;i++) {
+		     if(x%i==0) {
+		    	 flag = 0;
+		     }
+		    }
+            if(flag==0) {
 	      System.out.println( "Number is Composite." );
 	     }
 	      else
@@ -68,7 +58,7 @@ class Logical
             break;
             case 5:
            System.out.println("Enter number");
-            i=Double.parseDouble(b.readLine());
+            i=in.nextDouble();
             double rn=0,a=i,r;
            
         while(i!=0)
@@ -84,7 +74,7 @@ class Logical
             break;
             case 6:
            System.out.println("Enter year");
-            i=Double.parseDouble(b.readLine());
+            i=in.nextDouble();
             if(i%100==0)
             {
                 if(i%400==0)
@@ -100,7 +90,7 @@ class Logical
             break;
             case 7:
            System.out.println("Enter number of terms");
-           i=Integer.parseInt(b.readLine());
+           i=in.nextInt();
            
             long first=0,second=1,third;
             System.out.println(first+"\t"+second);
@@ -115,7 +105,7 @@ class Logical
             }
             break;
          case 8 : System.out.println("Enter number");
-           int m = Integer.parseInt(b.readLine());
+           int m = in.nextInt();
             int d1,d3,d2,n;
             d1 = m%10;
             d2 = ((m/10)%10);
@@ -128,7 +118,7 @@ class Logical
             break;
             case 9:
             System.out.println("Enter number");
-            int t=Integer.parseInt(b.readLine());
+            int t=in.nextInt();
             int s=0,mid=t/2;
             for(x=1;x<=mid;x++)
             {
