@@ -50,3 +50,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/Aritmetic.class
+/Calculator.class
+/Exponential.class
+/Logical.class
+/Others.class
+/Trignometric.class
+/MatrixOperations.class
