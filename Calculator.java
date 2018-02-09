@@ -43,11 +43,19 @@ class Calculator {
                    System.out.println("Wrong Choice");
           }
           System.out.println();
+<<<<<<< HEAD
           System.out.println("Do You Want to tryer Again");
+=======
+          System.out.println("Do You Want to try Again");
+>>>>>>> c54beadd4e8306f5d110437f67786f1de7f4a59d
           System.out.println("Enter 1 for YES ");
           System.out.println("For NO enter 0"); 
           tryer= in.nextInt();
        }while(tryer==1);
        System.exit(0);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c54beadd4e8306f5d110437f67786f1de7f4a59d
