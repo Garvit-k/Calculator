@@ -1,24 +1,21 @@
-import java.io.*;
-import java.util.*;
-class Calculator
-{
-    public static void main(String args[]) throws IOException
-    {
-       BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+import java.util.Scanner;
+
+class Calculator {
+    public static void main(String args[]) {
+    	Scanner in = new Scanner(System.in);
        int choice=0,tryer=0;
        do
        {
         
-         System.out.println("choose any one Option");
+         System.out.println("Choose any one Option");
          System.out.println("1.Arithmetic Calculations");
          System.out.println("2.Exponential Calculations");
          System.out.println("3.Trignometric calculations");
          System.out.println("4.Logical calculations");
          System.out.println("5.Others");
          System.out.println("6.Exit");
-         choice=Integer.parseInt(br.readLine());
-         switch(choice)
-          {
+         choice=in.nextInt();
+         switch(choice) {
              case 1:
                    Aritmetic ar=new Aritmetic();
                    ar.arith();
@@ -46,11 +43,19 @@ class Calculator
                    System.out.println("Wrong Choice");
           }
           System.out.println();
+<<<<<<< HEAD
           System.out.println("Do You Want to tryer Again");
+=======
+          System.out.println("Do You Want to try Again");
+>>>>>>> c54beadd4e8306f5d110437f67786f1de7f4a59d
           System.out.println("Enter 1 for YES ");
           System.out.println("For NO enter 0"); 
-          tryer= Integer.parseInt(br.readLine());
+          tryer= in.nextInt();
        }while(tryer==1);
        System.exit(0);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c54beadd4e8306f5d110437f67786f1de7f4a59d
