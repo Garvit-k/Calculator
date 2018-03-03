@@ -43,11 +43,12 @@ class Calculator {
                    System.out.println("Wrong Choice");
           }
           System.out.println();
-          System.out.println("Do You Want to tryer Again");
+          System.out.println("Do You Want to try Again");
           System.out.println("Enter 1 for YES ");
           System.out.println("For NO enter 0"); 
           tryer= in.nextInt();
        }while(tryer==1);
        System.exit(0);
     }
+}
 }
